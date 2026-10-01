@@ -17,6 +17,8 @@ model = ChatGoogleGenerativeAI(
 )
 
 notes = (folder / "notes.txt").read_text(encoding="utf-8")
+print("Notes file:", folder / "notes.txt")
+print("Loaded notes:", repr(notes))
 
 while True:
     question = input("\nAsk a question, or type exit: ").strip()

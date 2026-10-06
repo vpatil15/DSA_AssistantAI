@@ -1,0 +1,31 @@
+Data Structures
+Arrays — Contiguous memory, O(1) access by index, O(n) insert/delete (shifting required). Best for fixed-size, fast lookups.
+Linked Lists — Nodes with pointers. O(1) insert/delete at known position, O(n) access. Singly, doubly, circular variants.
+Stacks — LIFO. Push/pop O(1). Used for: recursion, undo operations, expression parsing, DFS.
+Queues — FIFO. Enqueue/dequeue O(1). Used for: BFS, task scheduling. Variants: circular queue, deque, priority queue.
+Hash Tables — Key-value pairs via hash function. O(1) average lookup/insert/delete, O(n) worst case (collisions). Used for: fast lookups, caching, frequency counting.
+Trees
+•	Binary Tree — Each node has ≤2 children.
+•	BST — Left < root < right. O(log n) search/insert/delete if balanced, O(n) if skewed.
+•	Balanced trees (AVL, Red-Black) — Self-balancing, guarantee O(log n).
+•	Heaps — Complete binary tree, min-heap/max-heap. O(log n) insert/extract, O(1) peek. Used for: priority queues, scheduling.
+•	Tries — Prefix trees. Used for: autocomplete, dictionary lookups.
+Graphs — Nodes + edges, directed/undirected, weighted/unweighted. Represented via adjacency list (sparse) or adjacency matrix (dense).
+Algorithms
+Sorting
+•	Comparison-based: Merge Sort O(n log n) stable, Quick Sort O(n log n) avg/O(n²) worst, Heap Sort O(n log n)
+•	Non-comparison: Counting Sort, Radix Sort — O(n+k), good for bounded integer ranges
+Searching
+•	Binary Search — O(log n), requires sorted data
+•	BFS — level-order traversal, shortest path in unweighted graphs
+•	DFS — depth-first, used for cycle detection, topological sort, connected components
+Graph Algorithms
+•	Dijkstra's — shortest path, weighted (non-negative), O((V+E) log V)
+•	Bellman-Ford — handles negative weights, O(VE)
+•	Union-Find — cycle detection, Kruskal's MST
+•	Kruskal's/Prim's — Minimum Spanning Tree
+Dynamic Programming — Break problem into overlapping subproblems, store results (memoization/tabulation). Classic patterns: knapsack, longest common subsequence, Fibonacci, edit distance.
+Greedy — Make locally optimal choice at each step. Works when problem has "greedy choice property" (e.g., activity selection, Huffman coding).
+Two Pointers / Sliding Window — O(n) technique for array/string problems (pair sums, subarray/substring constraints).
+Backtracking — Explore all possibilities, prune invalid branches. Used for: permutations, combinations, N-Queens, Sudoku.
+
